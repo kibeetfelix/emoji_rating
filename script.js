@@ -1,4 +1,5 @@
 const starElements = document.querySelectorAll('.fa-star')
+const emojiElements = document.querySelectorAll('.fa-regular')
 
 starElements.forEach((starElements, index) => {
     starElements.addEventListener("click", () => {
@@ -14,4 +15,7 @@ function updateRating(index) {
             starElements.classList.remove("active");
         }
     })
+    emojiElements.forEach((emojiElements) => {
+        emojiElements.style.transform = `translateX(-${index * 50}px)`;
+    });
 }

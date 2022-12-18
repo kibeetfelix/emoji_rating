@@ -41,8 +41,9 @@ body {
     bottom: 20%;
 }
 
-.fa-solid {
+.fa-star {
     color: darkgrey;
+    cursor: pointer;
 }
 
 .fa-star.active {

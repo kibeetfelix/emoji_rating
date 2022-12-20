@@ -7,9 +7,9 @@ body {
 }
 
 .feedback-container {
-    background-color: aquamarine;
-    width: 400px;
-    height: 200px;
+    background-color: grey;
+    width: 350px;
+    height: 150px;
     box-shadow: 0 4px 8px rgba(5, 32, 32, 0.7);
     border-radius: 10px;
     position: relative;
@@ -42,10 +42,6 @@ body {
 }
 
 .fa-star {
-    color: darkgrey;
-    cursor: pointer;
-}
-
-.fa-star.active {
     color: orange;
+    cursor: pointer;
 }

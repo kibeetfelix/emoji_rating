@@ -1,5 +1,6 @@
 const starElements = document.querySelectorAll('.fa-star')
 const emojiElements = document.querySelectorAll('.fa-regular')
+const colorArrays = ["red", "blue", "yellow", "green", "maroon"]
 
 starElements.forEach((starElements, index) => {
     starElements.addEventListener("click", () => {
@@ -17,5 +18,6 @@ function updateRating(index) {
     })
     emojiElements.forEach((emojiElements) => {
         emojiElements.style.transform = `translateX(-${index * 50}px)`;
+        emojiElements.style.color = colorArrays[index]
     });
 }
